@@ -9,16 +9,21 @@
     "dev": "nodemon",
     "lint": "eslint . --ext .js,.ts",
     "lint:fix": "eslint . --ext .js,.ts --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/adapter-pg": "^7.2.0",
+    "@prisma/client": "^7.2.0",
+    "dotenv": "^17.2.3",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
     "express": "^5.2.1",
-    "prettier": "^3.7.4"
+    "prettier": "^3.7.4",
+    "prisma": "^7.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
@@ -26,6 +31,7 @@
     "@types/node": "^25.0.8",
     "eslint": "^9.39.2",
     "globals": "^17.0.0",
+    "husky": "^9.1.7",
     "jiti": "^2.6.1",
     "nodemon": "^3.1.11",
     "ts-node": "^10.9.2",
