@@ -13,8 +13,14 @@
 //husky
 import express from 'express';
 import 'dotenv/config';
+import logger from './config/logger';
 
 const app = express();
+
+logger.info('Logger initialized');
+logger.debug('Debugging info');
+logger.error('Error message example');
+logger.warn('Warning message example');
 
 app.use((req, res) => {
   res.send('Hello World!');
